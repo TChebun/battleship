@@ -1,0 +1,25 @@
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #000;
+  width: 20px;
+  height: 20px;
+}
+
+.numbers {
+  float: left;
+}
+
+.numbers div {
+  height: 23px;
+}
+
+.letters {
+  float: left;
+}
+
+.letters div {
+  width: 23px;
+}

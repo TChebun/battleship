@@ -25,10 +25,22 @@ class Board {
     this.boardGame.insertAdjacentElement("beforebegin", numbersForBoard);
     numbersForBoard.classList.add("numbers");
 
-    for (let i = 1; i <= 10; i++) {
-      let number = document.createElement("div");
-      numbersForBoard.appendChild(number);
-      number.innerText = i;
+    // for (let i = 1; i <= 10; i++) {
+    //   let number = document.createElement("div");
+    //   numbersForBoard.appendChild(number);
+    //   number.innerText = i;
+    // }
+
+    for (let i = 0; i <= 10; i++) {
+      if (i == 0) {
+        let number = document.createElement("div");
+        numbersForBoard.appendChild(number);
+        number.innerText = "";
+      } else {
+        let number = document.createElement("div");
+        numbersForBoard.appendChild(number);
+        number.innerText = i;
+      }
     }
   }
 

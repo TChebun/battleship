@@ -4,10 +4,83 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Морской бой</title>
   </head>
   <body>
-    <table id="game"></table>
+    <div class="container">
+      <h1>Морской бой</h1>
+      <div class="battle__field">
+        <div class="battle">
+          <div class="battle__item">
+            <table id="game"></table>
+          </div>
+
+          <div class="field">
+            <div class="field-name">Поле соперника</div>
+            <hr />
+            <div id="status"></div>
+            <div id="message"></div>
+          </div>
+        </div>
+        <div class="battle">
+          <div class="battle__item">
+            <table id="gamePlayer"></table>
+          </div>
+          <div class="field">
+            <div class="field-name">Поле игрока</div>
+            <hr />
+            <div class="rules">
+              Расположите на поле 4 вида кораблей, в указанном ниже порядке:
+              <ol>
+                <li>Четырехпалубный "Линкор" - 1 шт.</li>
+                <li>Трехпалубный "Крейсер"- 2 шт.</li>
+                <li>Двуххпалубный "Эсминец"- 3 шт.</li>
+                <li>Однопалубный "Шлюпка"- 4 шт.</li>
+              </ol>
+              Корабли не должны находиться рядом с друг другом.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu">
+        <button id="tips">Подсказка для QA</button>
+        <div class="score">Ваш счет: <br /><span id="score"></span></div>
+        <div class="wrp-ships">
+          <div class="block">
+            <img src="img/1.png" alt="" width="150" />
+            <div class="wrp-score">
+              <div class="name-ship">Линкор</div>
+              <div score="4">0</div>
+            </div>
+          </div>
+          <hr />
+          <div class="block">
+            <img src="img/2.png" alt="" width="130" />
+            <div class="wrp-score">
+              <div class="name-ship">Крейсер</div>
+              <div score="3">0</div>
+            </div>
+          </div>
+          <hr />
+          <div class="block">
+            <img src="img/3.png" alt="" width="100" />
+            <div class="wrp-score">
+              <div class="name-ship">Эсминец</div>
+              <div score="2">0</div>
+            </div>
+          </div>
+          <hr />
+          <div class="block">
+            <img src="img/4.png" alt="" width="80" />
+            <div class="wrp-score">
+              <div class="name-ship">Шлюпка</div>
+              <div score="1">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./js/settings.js"></script>
     <script src="./js/board.js"></script>
     <script src="./js/main.js"></script>
